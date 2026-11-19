@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", sans-serif;
+  --font-display: "Montserrat", "Open Sans", sans-serif;
+  --color-magenta: #ce009c;
+  --color-hot: #ff0091;
+  --color-navy: #292b74;
+  --color-plum: #540c77;
+  --color-ink: #3f444b;
+  --color-mist: #f3f6f6;
+  --color-calc: #790d56;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+.prose-tadiran p {
+  margin: 0 0 1rem;
+}
+
+.prose-tadiran ul {
+  margin: 0 0 1rem 1.2rem;
+  list-style: disc;
+}
+
+.prose-tadiran li {
+  margin: 0.25rem 0;
+}
