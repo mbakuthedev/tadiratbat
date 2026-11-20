@@ -211,7 +211,7 @@ const pages: Record<string, { title: string; lede?: string; body: ReactNode }> =
     lede: 'Lithium cells are tested to UN 38.3 before they are offered for transport.',
     body: (
       <>
-        <p>Tadiran publishes UN 38.3 test summary reports by product. The individual report files are issued per cell family and were not copied into this recreation. Use the data sheet for the electrical rating, and ask sales@tadiranbat.com for the current test summary that matches the exact model and revision.</p>
+        <p>Tadiran publishes UN 38.3 test summary reports by product. The individual report files are issued per cell family and were not copied into this recreation. Use the data sheet for the electrical rating, and ask sales@tadiranbatt-europe.com for the current test summary that matches the exact model and revision.</p>
         <p>TLM Military Grade literature also cites UN 1642 and IEC 60086 mechanical and electrical abuse tests, and states those cells can be shipped as non-hazardous goods.</p>
         <Link to="/technical-data/safety-data-sheets" className="font-bold text-plum underline">Shipping documents and safety data sheets</Link>
       </>
@@ -222,7 +222,7 @@ const pages: Record<string, { title: string; lede?: string; body: ReactNode }> =
     body: (
       <>
         <p>Tadiran’s product overview states that standard cells and custom battery packs are certified lead-free and compliant with RoHS, WEEE EC, and REACH. The detailed EU Battery Regulation filings are maintained by Tadiran and were not republished as a local legal summary.</p>
-        <p>For a current declaration on a specific cell, contact sales@tadiranbat.com and include the model number.</p>
+        <p>For a current declaration on a specific cell, contact sales@tadiranbatt-europe.com and include the model number.</p>
       </>
     ),
   },
@@ -284,7 +284,7 @@ const pages: Record<string, { title: string; lede?: string; body: ReactNode }> =
     body: (
       <>
         <p>The supported catalog is the families listed under Products. Tadiran keeps a separate list of parts that are no longer supported. That legacy table was not copied here, because unpublished cross-references should come from Tadiran rather than be guessed.</p>
-        <p>If you have an older part number — field returns have included cells such as the TL-2100 used in early Aclara meters — send it to sales@tadiranbat.com for the current replacement.</p>
+        <p>If you have an older part number — field returns have included cells such as the TL-2100 used in early Aclara meters — send it to sales@tadiranbatt-europe.com for the current replacement.</p>
         <Link to="/products" className="font-bold text-plum underline">Current products</Link>
       </>
     ),

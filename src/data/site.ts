@@ -15,12 +15,10 @@ export const PR_ICON = 'https://tadiranbat.com/wp-content/uploads/2022/03/PR-ico
 
 export const company = {
   name: 'Tadiran Batteries',
-  division: 'Tadiran U.S. Battery Division',
-  address: ['2001 Marcus Avenue, Suite 125E', 'Lake Success, NY 11042'],
-  phone: '1-516-621-4980',
-  tollFree: '1-800-537-1368',
-  fax: '(516) 621-4517',
-  email: 'sales@tadiranbat.com',
+  division: 'Tadiran Batteries',
+  address: ['197 Hidden Valley Road', 'Lancaster, PA 17602'],
+  phone: '+1 717-293-9237',
+  email: 'sales@tadiranbatt-europe.com',
   social: [
     { label: 'Facebook', href: 'https://www.facebook.com/pages/Tadiran-Batteries/214427401918957' },
     { label: 'Twitter', href: 'https://twitter.com/TadiranBat' },

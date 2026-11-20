@@ -33,10 +33,6 @@ export function Footer() {
           <p className="mt-4 text-[15px] leading-7">
             Telephone: {company.phone}
             <br />
-            Toll Free Telephone: {company.tollFree}
-            <br />
-            Fax: {company.fax}
-            <br />
             E-mail:{' '}
             <a className="underline" href={`mailto:${company.email}`}>
               {company.email}
@@ -60,7 +56,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-xs text-white/70">
-        Tadiran Batteries · Lake Success, NY · Product documents open the public files posted by Tadiran.
+        Tadiran Batteries · Lancaster, PA · Product documents open the public files posted by Tadiran.
       </div>
     </footer>
   )

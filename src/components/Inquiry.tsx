@@ -94,9 +94,9 @@ export function InquiryBand() {
             From research and design, to world class ISO 9001:2000 certified manufacturing and quality assurance, to a global sales and distribution network, Tadiran is ready to serve your needs with standard cells or custom battery packs.
           </p>
           <p className="mt-4 text-[15px] leading-7">
-            2001 Marcus Ave., Suite 125E, Lake Success, NY 11042
+            197 Hidden Valley Road, Lancaster, PA 17602
             <br />
-            1-800-537-1368 | (516) 621-4980 | Fax: (516) 621-4517
+            +1 717-293-9237 | sales@tadiranbatt-europe.com
           </p>
           <Link to="/questionnaire" className="mt-4 inline-block text-sm font-bold text-plum underline">
             Submit an Application Questionnaire

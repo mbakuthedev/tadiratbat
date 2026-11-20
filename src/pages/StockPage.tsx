@@ -49,7 +49,7 @@ export function StockPage() {
             </tbody>
           </table>
         </div>
-        {results.length === 0 && <p className="mt-4">No published model matches that search. Contact sales@tadiranbat.com for a distributor quote.</p>}
+        {results.length === 0 && <p className="mt-4">No published model matches that search. Contact sales@tadiranbatt-europe.com for a distributor quote.</p>}
       </div>
     </div>
   )
