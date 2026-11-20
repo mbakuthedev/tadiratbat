@@ -27,23 +27,6 @@ const items: Item[] = [
   },
   { label: 'Stock Check', to: '/stock-check' },
   {
-    label: 'Distributors',
-    to: '/distributors',
-    children: [
-      { label: 'Sales Network – North America', to: '/distributors/north-america' },
-      { label: 'Sales Network – International', to: '/distributors/international' },
-    ],
-  },
-  {
-    label: 'Media',
-    children: [
-      { label: 'Articles', to: '/media/articles' },
-      { label: 'Press Releases', to: '/media/press-releases' },
-      { label: 'Testimonials', to: '/technical-data/testimonials' },
-      { label: 'Ad Survey', to: '/ad-survey' },
-    ],
-  },
-  {
     label: 'Technical Data',
     to: '/technical-data',
     children: [

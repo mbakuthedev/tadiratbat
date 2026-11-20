@@ -42,13 +42,6 @@ export function Footer() {
               {company.email}
             </a>
           </p>
-          <div className="mt-5 flex gap-3">
-            {company.social.map((item) => (
-              <a key={item.label} href={item.href} target="_blank" rel="noreferrer" aria-label={item.label} className="grid h-9 w-9 place-items-center rounded-full border border-white/40 text-xs font-extrabold hover:border-magenta hover:text-magenta">
-                {item.label.slice(0, 2)}
-              </a>
-            ))}
-          </div>
           <Link to="/" className="mt-6 inline-block text-sm font-extrabold underline">
             BACK TO HOME
           </Link>

@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 type InquiryValues = {
   firstName: string
@@ -20,7 +20,6 @@ const empty: InquiryValues = {
 }
 
 export function InquiryForm({ compact = false }: { compact?: boolean }) {
-  const navigate = useNavigate()
   const [values, setValues] = useState<InquiryValues>(empty)
   const [errors, setErrors] = useState<Partial<Record<keyof InquiryValues, string>>>({})
 
@@ -40,10 +39,7 @@ export function InquiryForm({ compact = false }: { compact?: boolean }) {
 
   function onSubmit(event: FormEvent) {
     event.preventDefault()
-    const next = validate()
-    setErrors(next)
-    if (Object.keys(next).length) return
-    navigate('/contact/thank-you', { state: { name: values.firstName } })
+    setErrors(validate())
   }
 
   const fields: { key: keyof InquiryValues; label: string; area?: boolean }[] = [

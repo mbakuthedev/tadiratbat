@@ -1,33 +1,17 @@
 import { useState, type FormEvent } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { InquiryForm } from '../components/Inquiry'
 import { PageTitle } from '../components/PageTitle'
 import { applications } from '../data/applications'
-import { company, MAP } from '../data/site'
+import { company } from '../data/site'
 
 export function ContactPage() {
   return (
     <div>
       <PageTitle title="Contact Us" />
       <div className="mx-auto grid max-w-[1100px] gap-10 px-4 py-10 md:px-6 lg:grid-cols-2">
-        <div>
-          <img src={MAP} alt="North America map" className="mb-6 w-full border border-neutral-200" />
-          <h2 className="text-[26px]">Tadiran U.S. Battery Division</h2>
-          <p className="mt-3 text-[16px] leading-7">
-            {company.address[0]}
-            <br />
-            {company.address[1]}
-            <br />
-            Telephone: {company.phone}
-            <br />
-            Toll Free Telephone: {company.tollFree}
-            <br />
-            Fax: {company.fax}
-            <br />
-            E-mail: <a className="text-plum underline" href={`mailto:${company.email}`}>{company.email}</a>
-          </p>
-          <h3 className="mt-6 text-[22px]">North American Distributors</h3>
-          <Link to="/distributors/north-america" className="font-bold text-plum underline">View the sales network</Link>
+        <div className="flex min-h-[320px] items-center justify-center border border-dashed border-neutral-300 bg-mist px-6 text-center text-ink">
+          <p className="text-[18px] font-semibold">Location placeholder</p>
         </div>
         <div>
           <h2 className="mb-4 text-[26px]">Let us know more about your application.</h2>
@@ -81,7 +65,6 @@ const initial: Questionnaire = {
 }
 
 export function QuestionnairePage() {
-  const navigate = useNavigate()
   const [values, setValues] = useState<Questionnaire>(initial)
   const [errors, setErrors] = useState<string[]>([])
 
@@ -98,8 +81,6 @@ export function QuestionnairePage() {
     if (!values.company.trim()) next.push('Company is required.')
     if (!values.life.trim()) next.push('Operating life is required.')
     setErrors(next)
-    if (next.length) return
-    navigate('/questionnaire/thank-you', { state: { name: values.firstName } })
   }
 
   const fieldClass = 'mt-1 w-full border border-neutral-300 px-3 py-2 outline-none focus:border-magenta'
