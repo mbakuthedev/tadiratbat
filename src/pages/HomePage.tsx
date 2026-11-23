@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import { applications } from '../data/applications'
-import { articles, webinars, whitepapers } from '../data/content'
 import { series } from '../data/products'
-import { BATTERY_PHOTO, HERO, PATTERN, PODCAST, SELF_DISCHARGE } from '../data/site'
+import { BATTERY_PHOTO, HERO, PATTERN, SELF_DISCHARGE } from '../data/site'
 
 const stories = [
   {
@@ -139,64 +138,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="bg-mist">
-        <div className="mx-auto grid max-w-[1100px] gap-10 px-4 py-14 md:px-6 lg:grid-cols-2">
-          <div>
-            <h2 className="text-[36px]">Webinars</h2>
-            <div className="mt-5 space-y-5">
-              {webinars.map((item) => (
-                <article key={item.title} className="border-l-4 border-magenta bg-white p-4">
-                  <h3 className="text-[20px]">{item.title}</h3>
-                  <p className="mt-2 text-sm">{item.date}</p>
-                  <p className="text-sm">SPEAKER: {item.speaker}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="text-[36px]">Podcasts</h2>
-            <a href="https://embeddedcomputing.com/technology/analog-and-power/batteries-power-supplies/embedded-executive-a-40-year-battery-with-tadiran" target="_blank" rel="noreferrer" className="mt-5 block bg-white no-underline">
-              <img src={PODCAST} alt="Embedded Executive podcast with Sol Jacobs" className="w-full" />
-              <div className="p-4 text-black">
-                <h3 className="text-[20px]">Embedded Executive: A 40-Year Battery? with Tadiran</h3>
-                <p className="mt-2 text-sm">Aired June, 2024</p>
-                <p className="text-sm">Sol Jacobs, VP and GM, Tadiran Batteries</p>
-                <p className="text-sm">Rich Nass, VP and Brand Director, Embedded Computing Design</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1100px] px-4 py-14 md:px-6">
-          <h2 className="text-[36px]">Whitepapers</h2>
-          <ul className="mt-6 grid gap-3 md:grid-cols-2">
-            {whitepapers.map((paper) => (
-              <li key={paper.slug}>
-                <Link to={`/media/whitepapers/${paper.slug}`} className="font-semibold text-plum underline">
-                  {paper.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <h2 className="mt-12 text-[36px]">From the article archive</h2>
-          <ul className="mt-4 grid gap-2 md:grid-cols-2">
-            {articles.slice(0, 8).map((article) => (
-              <li key={article.title} className="text-[15px]">
-                <Link to={`/media/articles/${slug(article.title)}`} className="text-plum underline">
-                  {article.title}
-                </Link>
-                <span className="text-ink"> — {article.source}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </div>
   )
-}
-
-function slug(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 }

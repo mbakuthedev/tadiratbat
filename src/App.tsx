@@ -4,7 +4,7 @@ import { ApplicationDetailPage } from './pages/ApplicationDetailPage'
 import { ApplicationsPage } from './pages/ApplicationsPage'
 import { CalculatorPage } from './pages/CalculatorPage'
 import { CellPage } from './pages/CellPage'
-import { ContactPage, QuestionnairePage, ThankYouPage } from './pages/ContactPages'
+import { ContactPage, ThankYouPage } from './pages/ContactPages'
 import { DistributorsPage, InternationalPage, NorthAmericaPage } from './pages/DistributorsPage'
 import { HomePage } from './pages/HomePage'
 import { ImitatorsPage, NotFoundPage } from './pages/InfoPages'
@@ -38,8 +38,6 @@ export default function App() {
         <Route path="technical-data/:slug" element={<TechnicalPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="contact/thank-you" element={<ThankYouPage />} />
-        <Route path="questionnaire" element={<QuestionnairePage />} />
-        <Route path="questionnaire/thank-you" element={<ThankYouPage />} />
         <Route path="battery-calculator" element={<CalculatorPage />} />
         <Route path="search" element={<SearchPage />} />
         <Route path="ad-survey" element={<SurveyPage />} />

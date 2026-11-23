@@ -88,8 +88,8 @@ export function CalculatorPage() {
 
       {stage === 'advanced' && (
         <div className="mx-auto max-w-[800px] px-4 pb-12 md:px-6">
-          <p className="mb-4">A detailed lifetime calculation needs the real load profile. Send it through the application questionnaire.</p>
-          <Link to="/questionnaire" className="inline-block bg-navy px-6 py-3 text-sm font-extrabold text-white no-underline">Open the questionnaire</Link>
+          <p className="mb-4">A detailed lifetime calculation needs the real load profile. Contact the sales team with your operating profile.</p>
+          <Link to="/contact" className="inline-block bg-navy px-6 py-3 text-sm font-extrabold text-white no-underline">Contact us</Link>
           <button type="button" onClick={() => setStage('choose')} className="ml-3 text-sm font-bold text-plum underline">Back</button>
         </div>
       )}
@@ -130,7 +130,7 @@ export function CalculatorPage() {
                 {' '}({result.pick.capacity} {result.family === 'tli' || result.family === 'tlm' ? 'mAh' : 'Ah'})
               </p>
             )}
-            <Link to="/questionnaire" className="mt-5 inline-block bg-navy px-5 py-2 text-sm font-extrabold text-white no-underline">Request a lifetime model</Link>
+            <Link to="/contact" className="mt-5 inline-block bg-navy px-5 py-2 text-sm font-extrabold text-white no-underline">Contact us</Link>
           </aside>
         </div>
       )}

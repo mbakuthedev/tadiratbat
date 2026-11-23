@@ -10,7 +10,6 @@ const staticPages = [
   { title: 'Contact Us', to: '/contact' },
   { title: 'Battery Calculator', to: '/battery-calculator' },
   { title: 'Stock Check', to: '/stock-check' },
-  { title: 'Application Questionnaire', to: '/questionnaire' },
   { title: 'Product Data Sheets', to: '/technical-data/product-data-sheets' },
   { title: 'Safety Data Sheets', to: '/technical-data/safety-data-sheets' },
   { title: 'North America Distributors', to: '/distributors/north-america' },

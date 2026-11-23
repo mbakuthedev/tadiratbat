@@ -41,8 +41,8 @@ export function ApplicationDetailPage() {
               Summary compiled from Tadiran’s published application categories and product positioning. The utility-metering, military, high-temperature, low-temperature, and oceanographic pages include text taken from the public site.
             </p>
           )}
-          <Link to="/questionnaire" className="mt-6 inline-block bg-navy px-6 py-3 text-sm font-extrabold text-white no-underline">
-            Application questionnaire
+          <Link to="/contact" className="mt-6 inline-block bg-navy px-6 py-3 text-sm font-extrabold text-white no-underline">
+            Contact us
           </Link>
         </div>
       </div>

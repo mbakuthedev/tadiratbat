@@ -15,14 +15,12 @@ const items: Item[] = [
     to: '/products',
     children: [
       ...series.map((item) => ({ label: item.menu, to: `/products/${item.slug}` })),
-      { label: 'Lithium Battery Application Questionnaire', to: '/questionnaire' },
     ],
   },
   {
     label: 'Applications',
     children: [
       ...applications.map((item) => ({ label: item.name.replace('Utility/AMR/AMI', 'AMR/AMI Utility Metering').replace('Industrial IoT', 'Industrial Internet of Things').replace('Military & Aerospace', 'Military/Aerospace'), to: `/applications/${item.slug}` })),
-      { label: 'Lithium Battery Application Questionnaire', to: '/questionnaire' },
     ],
   },
   { label: 'Stock Check', to: '/stock-check' },
@@ -44,7 +42,6 @@ const items: Item[] = [
       { label: 'Product Data Sheets', to: '/technical-data/product-data-sheets' },
       { label: 'Products No Longer Supported', to: '/technical-data/discontinued-products' },
       { label: 'Terms and Conditions', to: '/technical-data/terms-and-conditions' },
-      { label: 'Lithium Battery Application Questionnaire', to: '/questionnaire' },
     ],
   },
   { label: 'Contact Us', to: '/contact' },

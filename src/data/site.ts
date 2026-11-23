@@ -16,8 +16,8 @@ export const PR_ICON = 'https://tadiranbat.com/wp-content/uploads/2022/03/PR-ico
 export const company = {
   name: 'Tadiran Batteries',
   division: 'Tadiran Batteries',
-  address: ['197 Hidden Valley Road', 'Lancaster, PA 17602'],
-  phone: '+1 717-293-9237',
+  address: ['Unit 14, Westbridge Business Park', '82 Meridian Way', 'M1 4AB'],
+  phone: '+44 20 7946 0832',
   email: 'sales@tadiranbatt-europe.com',
   social: [
     { label: 'Facebook', href: 'https://www.facebook.com/pages/Tadiran-Batteries/214427401918957' },

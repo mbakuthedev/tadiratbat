@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Link } from 'react-router-dom'
+import { company } from '../data/site'
 
 type InquiryValues = {
   firstName: string
@@ -94,13 +94,14 @@ export function InquiryBand() {
             From research and design, to world class ISO 9001:2000 certified manufacturing and quality assurance, to a global sales and distribution network, Tadiran is ready to serve your needs with standard cells or custom battery packs.
           </p>
           <p className="mt-4 text-[15px] leading-7">
-            197 Hidden Valley Road, Lancaster, PA 17602
-            <br />
-            +1 717-293-9237 | sales@tadiranbatt-europe.com
+            {company.address.map((line) => (
+              <span key={line}>
+                {line}
+                <br />
+              </span>
+            ))}
+            {company.phone} | {company.email}
           </p>
-          <Link to="/questionnaire" className="mt-4 inline-block text-sm font-bold text-plum underline">
-            Submit an Application Questionnaire
-          </Link>
         </div>
         <InquiryForm compact />
       </div>
