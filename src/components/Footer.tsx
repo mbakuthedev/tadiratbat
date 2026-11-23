@@ -59,7 +59,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-xs text-white/70">
-        Tadiran Batteries · M1 4AB · Product documents open the public files posted by Tadiran.
+        Industrial Solutions GmbH · 10115 Berlin · Product documents open the public files posted by Tadiran.
       </div>
     </footer>
   )
