@@ -16,7 +16,7 @@ export const PR_ICON = 'https://tadiranbat.com/wp-content/uploads/2022/03/PR-ico
 export const company = {
   name: 'Tadiran Batteries',
   division: 'Tadiran Batteries',
-  address: ['Industrial Solutions GmbH', '28 Industrial Street', '10115 Berlin', 'Germany'],
+  address: ['Tadiran Batteries GmbH', '28 Industrial Street', '10115 Berlin', 'Germany'],
   phone: '+49 30 5550 1234',
   email: 'sales@tadiranbatt-europe.com',
   social: [
